@@ -473,7 +473,7 @@ app.put("/user", authenticateToken, (req, res) => {
 });
 
 app.post("/register", async (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   const { name, email, password, role } = req.body;
   const existingUser = await EmployeeModel.findOne({ email });
   if (existingUser) {
