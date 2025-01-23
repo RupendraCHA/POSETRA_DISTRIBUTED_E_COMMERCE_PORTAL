@@ -83,7 +83,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="container flex justify-between items-center h-30 px-20 py-2 bg-gradient-to-r from-[#86d3e3] to-[#506bf2]">
+      <header
+        className="flex justify-between items-center h-30 px-20 py-2 
+        bg-gradient-to-r from-[#090721] to-[#090721]
+      "
+      >
         <div>
           <Link to="/" className="no-underline">
             <img
