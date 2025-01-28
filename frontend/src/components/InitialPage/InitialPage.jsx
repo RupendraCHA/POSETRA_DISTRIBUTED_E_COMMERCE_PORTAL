@@ -6,15 +6,13 @@ import './initialPage.css';
 function InitialPage() {
   // Accessing the logged-in state from the Redux store
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-  console.log({ isLoggedIn });
+  // console.log({ isLoggedIn });
   if (isLoggedIn) {
     return (
       <div
         className="flex justify-around items-center gap-30 bg-[#fff] p-3 h-screen
       "
       >
-        {/* bg-gradient-to-r from-[#86d3e3] to-[#506bf2] */}
-
         <div className="flex justify-around items-center gap-30">
           <div className="flex gap-5 flex-col justify-start align-start text-black ml-4">
             <h3 className="text-5xl underline font-semibold">

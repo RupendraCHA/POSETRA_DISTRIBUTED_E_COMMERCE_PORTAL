@@ -50,7 +50,7 @@ function SignUp() {
       axios
         .post('http://localhost:3002/register', { name, email, password, role })
         .then((result) => {
-          console.log(result);
+          console.log(result, "User Details");
           navigate('/login');
         })
         .catch((err) => console.log(err));
